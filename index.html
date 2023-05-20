@@ -18,9 +18,9 @@
             <div class="profile__card">
                 <img class="profile__avatar" src="./images/Avatar.png" alt="Аватар">
                 <div class="profile__info">
-                    <h1 class="profile__title">Жак-Ив Кусто</h1>
+                    <h1 class="profile__title">Жак-Ив Кусто Жак-Ив Кусто</h1>
                     <button type="button" class="profile__edit-button"></button>
-                    <span class="profile__description">Исследователь океана</span>
+                    <span class="profile__description">Исследователь океана Исследователь океана Исследователь океана</span>
                 </div>
             </div>
             <button class="profile__add-button" type="button"></button>
@@ -28,42 +28,42 @@
 
         <ul class="elements">
             <li class="card">
-                <img class="card__photo" src="./images/tree2.JPG">
+                <img class="card__photo" src="./images/tree2.JPG" alt="Цветущая белыми цветами яблоня">
                 <div class="card__info">
                     <h3 class="card__title">Карачаевск</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
                 </div>
             </li>
             <li class="card">
-                <img class="card__photo" src="./images/love.JPG">
+                <img class="card__photo" src="./images/love.JPG"  alt="Тени на дороге от влюбленной пары">
                 <div class="card__info">
                     <h3 class="card__title">Гора Эльбрус</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
                 </div>
             </li>
             <li class="card">
-                <img class="card__photo" src="./images/VDNH.JPG">
+                <img class="card__photo" src="./images/VDNH.JPG"  alt="Памятник космонавтики на ВДНХ">
                 <div class="card__info">
                     <h3 class="card__title">Домбай</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
                 </div>
             </li>
             <li class="card">
-                <img class="card__photo" src="./images/parachute.JPG">
+                <img class="card__photo" src="./images/parachute.JPG" alt="Парашютист приземляется">
                 <div class="card__info">
                     <h3 class="card__title">Гора Эльбрус</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
                 </div>
             </li>
             <li class="card">
-                <img class="card__photo" src="./images/Baikal.JPG">
+                <img class="card__photo" src="./images/Baikal.JPG"  alt="Прозрачный лед Байкала с трещинами">
                 <div class="card__info">
                     <h3 class="card__title">Домбай</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
                 </div>
             </li>
             <li class="card">
-                <img class="card__photo" src="./images/tree.JPG">
+                <img class="card__photo" src="./images/tree.JPG"  alt="Цветущая розовыми цветами яблоня">
                 <div class="card__info">
                     <h3 class="card__title">Карачаево-Черкесск</h3>
                     <button class="card__like" type="button" aria-label="Поставить лайк"></button>
@@ -75,20 +75,22 @@
     <footer class="footer">
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
+
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
+            <form class="popup__user-info" name="user-info" novalidate>
+                <h2 class="popup__title">Редактировать профиль</h2>
+                <label class="popup__label">
+                  <input id="user-name-input" class="popup__input" aria-label="Введите своё имя" type="text" name="name" minlength="2" maxlength="40" required>
+                </label>
+                <label class="popup__label">
+                  <input id="user-career-input" class="popup__input" aria-label="Введите своё хобби" type="text" name="career" minlength="2" maxlength="200" required>
+                </label>
+                <button class="popup__save-button" type="submit">Сохранить</button>
+            </form>
+        </div>
+        
+    </div>
 </body>
-
-<div class="popup">
-    <form class="popup__container" name="user-info" novalidate>
-        <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-        <h2 class="popup__title">Редактировать профиль</h2>
-        <label class="popup__label">
-          <input id="user-name-input" class="popup__input" aria-label="Введите своё имя" type="text" name="name" minlength="2" maxlength="40" required>
-        </label>
-        <label class="popup__label">
-          <input id="user-career-input" class="popup__input" aria-label="Введите своё хобби" type="text" name="career" minlength="2" maxlength="200" required>
-        </label>
-        <button class="popup__save-button" type="submit">Сохранить</button>
-      </form>
-</div>
-
 </html>

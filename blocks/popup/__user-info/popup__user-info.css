@@ -1,0 +1,4 @@
+.popup__user-info {
+    display: flex;
+    flex-direction: column;
+}
