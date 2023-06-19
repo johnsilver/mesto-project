@@ -27,54 +27,7 @@
         </section>
 
         <ul class="elements">
-            <li class="card">
-                <img class="card__photo" src="./images/tree2.JPG" alt="Цветущая белыми цветами яблоня">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Карачаевск</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
-            <li class="card">
-                <img class="card__photo" src="./images/love.JPG"  alt="Тени на дороге от влюбленной пары">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Гора Эльбрус</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
-            <li class="card">
-                <img class="card__photo" src="./images/VDNH.JPG"  alt="Памятник космонавтики на ВДНХ">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Звездный бульвар</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
-            <li class="card">
-                <img class="card__photo" src="./images/parachute.JPG" alt="Парашютист приземляется">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Гора Эльбрус</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
-            <li class="card">
-                <img class="card__photo" src="./images/Baikal.JPG"  alt="Прозрачный лед Байкала с трещинами">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Байкал</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
-            <li class="card">
-                <img class="card__photo" src="./images/tree.JPG"  alt="Цветущая розовыми цветами яблоня">
-                <button class="card__delete" type="button" aria-label="Удалить карточку"></button>
-                <div class="card__info">
-                    <h3 class="card__title">Карачаево-Черкесск</h3>
-                    <button class="card__like" type="button" aria-label="Поставить лайк"></button>
-                </div>
-            </li>
+            
         </ul>
     </main>
 
@@ -85,13 +38,13 @@
     <div class="popup popup_type-add-card">
         <div class="popup__container">
             <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-            <form class="popup__user-info" name="user-info" novalidate>
+            <form class="popup__user-info form-add-card" name="user-info" novalidate>
                 <h2 class="popup__title">Новое место</h2>
                 <label class="popup__label">
                   <input id="card-name-input" class="popup__input" aria-label="Название" placeholder="Название" type="text" name="name" minlength="2" maxlength="40" required>
                 </label>
                 <label class="popup__label">
-                  <input id="card-link-input" class="popup__input" aria-label="Ссылка на картинку" placeholder="Ссылка на картинку" type="text" name="image link" minlength="2" maxlength="200" required>
+                  <input id="card-link-input" class="popup__input" aria-label="Ссылка на картинку" placeholder="Ссылка на картинку" type="url" name="image link" minlength="2" maxlength="200" required>
                 </label>
                 <button class="popup__save-button popup_a" type="submit">Создать</button>
             </form>
@@ -101,7 +54,7 @@
     <div class="popup popup_type-edit-profile">
         <div class="popup__container">
             <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
-            <form class="popup__user-info" name="user-info" novalidate>
+            <form class="popup__user-info form-user-info" name="user-info" novalidate>
                 <h2 class="popup__title">Редактировать профиль</h2>
                 <label class="popup__label">
                   <input id="user-name-input" class="popup__input" aria-label="Введите своё имя" placeholder="Введите своё имя" type="text" name="name" minlength="2" maxlength="40" required>
@@ -118,8 +71,8 @@
         <div class="popup__opened-card">
             <button class="popup__close-button" aria-label="Закрыть" type="button"></button>
             <figure class="popup__figure">
-                <img class="popup__photo" src="https://kipmu.ru/wp-content/uploads/lsc.jpg"  alt="Прозрачный лед Байкала с трещинами">
-                <h3 class="popup__opened-card-title">Байкал</h3>
+                <img class="popup__photo" src=""  alt="">
+                <h3 class="popup__opened-card-title"></h3>
             </figure>
             
         </div>
