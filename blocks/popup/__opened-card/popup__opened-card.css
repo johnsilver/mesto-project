@@ -1,0 +1,9 @@
+.popup__opened-card {
+    position: relative;
+}
+
+@media screen and (max-width: 425px) {
+    .popup__opened-card {
+      margin: 0 21px;
+    }
+  }

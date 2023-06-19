@@ -30,7 +30,9 @@
 /* card */
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__info/card__info.css);
+@import url(../blocks/card/__delete/card__delete.css);
 @import url(../blocks/card/__like/card__like.css);
+@import url(../blocks/card/__like/_active/card__like_actiive.css);
 @import url(../blocks/card/__photo/card__photo.css);
 @import url(../blocks/card/__title/card__title.css);
 
@@ -48,3 +50,7 @@
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__opened-card/popup__opened-card.css);
+@import url(../blocks/popup/__photo/popup__photo.css);
+@import url(../blocks/popup/__opened-card-title/popup__opened-card-title.css);
+@import url(../blocks/popup/__figure/popup__figure.css);
